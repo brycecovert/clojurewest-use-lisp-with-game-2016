@@ -1,0 +1,65 @@
+.dialogue {
+    height: 300px;
+    overflow-y:hidden;
+    position:relative;
+}
+a.small {
+    font-size: 10pt;
+}
+
+.dialogue .contents {
+    position:absolute;
+    bottom: 0px;
+} 
+
+div.choices {
+    background-color: #DDDDFA;
+    padding: 10px;
+    min-height: 170px;
+}
+div.choices img {
+    float:left;
+    padding-right: 10px;
+    overflow: auto;
+}
+
+.grow-enter {
+    padding: 0px;
+    margin: 0px;
+    height: 0px;
+    opacity: 0;
+}
+
+.grow-enter-active {
+    padding: 0px;
+    margin: 0px;
+    height: 30px;
+    opacity: 1.0;
+    transition: opacity 1.5s ease-in, height 0.5s ease-in;
+}
+
+
+.appear-enter {
+    opacity: 0.0;
+}
+
+.appear-enter-active {
+    opacity: 1.0;
+    transition: opacity 0.25s ease-out;
+}
+.appear-leave {
+    opacity: 1.0;
+}
+
+.appear-leave-active {
+    opacity: 0;
+    transition: opacity 0.25s ease-in;
+}
+
+.seen {
+    color: gray;
+}
+
+body {
+    font-size: 25px;
+}
